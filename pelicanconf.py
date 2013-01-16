@@ -6,7 +6,7 @@ SITENAME = 'Tips and News'
 SITEURL = 'http://blog.folissimo.com'
 DISQUS_SITENAME = 'folissimo'
 TIMEZONE = 'Europe/London'
-
+STATIC_PATHS = ['images']
 DEFAULT_LANG = 'en'
 
 

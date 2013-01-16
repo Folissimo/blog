@@ -9,7 +9,12 @@ body {
 	background: #fff url(../img/starBackground.png) repeat;
 	
 }
-
+.summary {
+	font-style: italic;
+}
+.introInfo {
+	padding: 15px 3px;
+}
   .sidebar-nav {
     padding: 9px 0;
   }

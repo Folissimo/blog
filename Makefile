@@ -13,8 +13,8 @@ FTP_TARGET_DIR=/
 
 SSH_HOST=direct.folissimo.com
 SSH_PORT=22
-SSH_USER=u67942480
-SSH_TARGET_DIR=/var/www/html/blogFolissimo
+SSH_USER=u6035998-blog
+SSH_TARGET_DIR=blog
 
 DROPBOX_DIR=~/Dropbox/Public/
 

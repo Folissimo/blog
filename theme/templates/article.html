@@ -14,11 +14,24 @@
                         </h1>
                 </header>
                 <div class="entry-content">
-                <div class="well">
+                	{% if article.image %}
+                	<div class="articleImage">
+                		<img src="{{ SITEURL }}/static/images/{{ article.image }}" />
+                	</div>
+                {% endif %}
+                <div class="introInfo">
                         {% include 'article_infos.html' %}
                 </div>
                 {{ article.content }}
+                
                 </div><!-- /.entry-content -->
+                <div class="articleFooter well">
+	                <span class="label">Category</span>
+					<a href="{{ SITEURL }}/{{ article.category.url }}"><i class="icon-folder-open"></i>{{ article.category }}</a>.
+					{% include 'taglist.html' %}
+					{% include 'translations.html' %}	
+                </div>
+                
                 {% if DISQUS_SITENAME %}
                 <div class="comments">
                 <h2>Comments !</h2>
