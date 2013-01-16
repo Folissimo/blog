@@ -2,21 +2,15 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Campbell Morgan'
-SITENAME = 'Folissimo Blog'
+SITENAME = 'Tips and News'
 SITEURL = 'http://blog.folissimo.com'
-
+DISQUS_SITENAME = 'folissimo'
 TIMEZONE = 'Europe/London'
 
 DEFAULT_LANG = 'en'
 
-# Blogroll
-LINKS =  (('Folissimo', 'http://www.folissimo.com'),)
 
 THEME = './theme'
 
-# Social widget
-SOCIAL = (('Twitter', 'http://www.twitter.com/folissimo'),
-          ('Facebook', 'http://www.facebook.com/folissimo'),
-          ('Pinterest', 'http://www.pinterest.com/folissimo'),)
 
 DEFAULT_PAGINATION = False

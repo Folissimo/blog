@@ -914,14 +914,14 @@
     display: none;
   }
   .nav-collapse .nav .nav-header {
-    color: #777777;
+    color: #000000;
     text-shadow: none;
   }
   .nav-collapse .nav > li > a,
   .nav-collapse .dropdown-menu a {
     padding: 9px 15px;
-    font-weight: bold;
-    color: #777777;
+    font-weight: normal;
+    color: #000000;
   }
   .nav-collapse .btn {
     padding: 4px 10px 4px;
@@ -932,15 +932,15 @@
   }
   .nav-collapse .nav > li > a:hover,
   .nav-collapse .dropdown-menu a:hover {
-    background-color: #f2f2f2;
+    background-color: #aaaaaa;
   }
   .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
-    color: #999999;
+    color: #ffffff;
   }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover {
-    background-color: #111111;
+    background-color: #000000;
   }
   .nav-collapse.in .btn-group {
     margin-top: 5px;
@@ -980,16 +980,16 @@
     float: none;
     padding: 10px 15px;
     margin: 10px 0;
-    border-top: 1px solid #f2f2f2;
-    border-bottom: 1px solid #f2f2f2;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     box-shadow: none;
   }
   .navbar-inverse .nav-collapse .navbar-form,
   .navbar-inverse .nav-collapse .navbar-search {
-    border-top-color: #111111;
-    border-bottom-color: #111111;
+    border-top-color: #000000;
+    border-bottom-color: #000000;
   }
   .navbar .nav-collapse .nav.pull-right {
     float: none;

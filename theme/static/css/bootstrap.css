@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Cantarell:400,700,400italic);
 /*!
  * Bootstrap v2.2.2
  *
@@ -205,18 +206,18 @@ textarea {
 }
 body {
   margin: 0;
-  font-family: "CantarellRegular", Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 14px;
   line-height: 20px;
-  color: #ffffff;
-  background-color: #000000;
+  color: #000000;
+  background-color: #ffffff;
 }
 a {
-  color: #00b900;
+  color: #333333;
   text-decoration: none;
 }
 a:hover {
-  color: #006d00;
+  color: #0d0d0d;
   text-decoration: underline;
 }
 .img-polaroid {
@@ -592,9 +593,10 @@ h4,
 h5,
 h6 {
   margin: 10px 0;
-  font-family: inherit;
-  font-weight: bold;
+  font-family: "CantarellRegular", Helvetica, Arial, sans-serif;
+  font-weight: normal;
   line-height: 20px;
+  text-transform: uppercase;
   color: inherit;
   text-rendering: optimizelegibility;
 }
@@ -614,16 +616,16 @@ h3 {
   line-height: 40px;
 }
 h1 {
-  font-size: 38.5px;
+  font-size: 24.5px;
 }
 h2 {
-  font-size: 31.5px;
+  font-size: 17.5px;
 }
 h3 {
   font-size: 24.5px;
 }
 h4 {
-  font-size: 17.5px;
+  font-size: 12.6px;
 }
 h5 {
   font-size: 14px;
@@ -642,6 +644,9 @@ h3 small {
 }
 h4 small {
   font-size: 14px;
+}
+footer {
+  font-style: italic !important;
 }
 .page-header {
   padding-bottom: 9px;
@@ -775,7 +780,6 @@ blockquote:after {
 address {
   display: block;
   margin-bottom: 20px;
-  font-style: normal;
   line-height: 20px;
 }
 code,
@@ -857,7 +861,7 @@ input,
 button,
 select,
 textarea {
-  font-family: "CantarellRegular", Helvetica, Arial, sans-serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 label {
   display: block;
@@ -1335,7 +1339,7 @@ select:focus:invalid:focus {
 }
 .help-block,
 .help-inline {
-  color: #ffffff;
+  color: #262626;
 }
 .help-block {
   display: block;
@@ -1570,7 +1574,7 @@ table {
   line-height: 20px;
   text-align: left;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #000000;
 }
 .table th {
   font-weight: bold;
@@ -1587,24 +1591,24 @@ table {
   border-top: 0;
 }
 .table tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #000000;
 }
 .table .table {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .table-condensed th,
 .table-condensed td {
   padding: 4px 5px;
 }
 .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solid #000000;
   border-collapse: separate;
   *border-collapse: collapse;
   border-left: 0;
 }
 .table-bordered th,
 .table-bordered td {
-  border-left: 1px solid #dddddd;
+  border-left: 1px solid #000000;
 }
 .table-bordered caption + thead tr:first-child th,
 .table-bordered caption + tbody tr:first-child th,
@@ -2307,14 +2311,14 @@ table th[class*="span"],
 .dropdown-submenu:hover > a {
   text-decoration: none;
   color: #ffffff;
-  background-color: #00af00;
+  background-color: #2e2e2e;
 }
 .dropdown-menu .active > a,
 .dropdown-menu .active > a:hover {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
-  background-color: #00af00;
+  background-color: #2e2e2e;
 }
 .dropdown-menu .disabled > a,
 .dropdown-menu .disabled > a:hover {
@@ -2402,8 +2406,7 @@ table th[class*="span"],
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
+  background-color: #ffffff;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -2479,16 +2482,16 @@ button.close {
   cursor: pointer;
   color: #333333;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
-  background-color: #666666;
+  background-color: #ffffff;
   border-color: #ffffff #ffffff #d9d9d9;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
   *background-color: #ffffff;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-  border: 1px solid #bbbbbb;
+  border: 1px solid #000000;
   *border: 0;
-  border-bottom-color: #a2a2a2;
+  border-bottom-color: #000000;
   *margin-left: .3em;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2594,10 +2597,10 @@ input[type="button"].btn-block {
 .btn-primary {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #00b919;
-  border-color: #00b93e #00b93e #006d24;
+  background-color: #333333;
+  border-color: #333333 #333333 #0d0d0d;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #00b93e;
+  *background-color: #333333;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -2608,12 +2611,12 @@ input[type="button"].btn-block {
 .btn-primary.disabled,
 .btn-primary[disabled] {
   color: #ffffff;
-  background-color: #00b93e;
-  *background-color: #00a035;
+  background-color: #333333;
+  *background-color: #262626;
 }
 .btn-primary:active,
 .btn-primary.active {
-  background-color: #00862d \9;
+  background-color: #1a1a1a \9;
 }
 .btn-warning {
   color: #ffffff;
@@ -2772,10 +2775,10 @@ input[type="submit"].btn.btn-mini {
 .btn-link {
   border-color: transparent;
   cursor: pointer;
-  color: #00b900;
+  color: #333333;
 }
 .btn-link:hover {
-  color: #006d00;
+  color: #0d0d0d;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -2912,7 +2915,7 @@ input[type="submit"].btn.btn-mini {
   background-color: #ffffff;
 }
 .btn-group.open .btn-primary.dropdown-toggle {
-  background-color: #00b93e;
+  background-color: #333333;
 }
 .btn-group.open .btn-warning.dropdown-toggle {
   background-color: #f89406;
@@ -3052,8 +3055,10 @@ input[type="submit"].btn.btn-mini {
   font-size: 11px;
   font-weight: bold;
   line-height: 20px;
-  color: #999999;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #000000;
+  background: #ffffff;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
   text-transform: uppercase;
 }
 .nav li + .nav-header {
@@ -3068,7 +3073,6 @@ input[type="submit"].btn.btn-mini {
 .nav-list .nav-header {
   margin-left: -15px;
   margin-right: -15px;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 .nav-list > li > a {
   padding: 3px 15px;
@@ -3076,8 +3080,7 @@ input[type="submit"].btn.btn-mini {
 .nav-list > .active > a,
 .nav-list > .active > a:hover {
   color: #ffffff;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
-  background-color: #00b900;
+  background-color: #333333;
 }
 .nav-list [class^="icon-"],
 .nav-list [class*=" icon-"] {
@@ -3137,7 +3140,7 @@ input[type="submit"].btn.btn-mini {
 .nav-tabs > .active > a,
 .nav-tabs > .active > a:hover {
   color: #555555;
-  background-color: #000000;
+  background-color: #ffffff;
   border: 1px solid #ddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -3151,7 +3154,7 @@ input[type="submit"].btn.btn-mini {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: #ffffff;
-  background-color: #00b900;
+  background-color: #333333;
 }
 .nav-stacked > li {
   float: none;
@@ -3192,13 +3195,13 @@ input[type="submit"].btn.btn-mini {
   margin-bottom: 1px;
 }
 .nav .dropdown-toggle .caret {
-  border-top-color: #00b900;
-  border-bottom-color: #00b900;
+  border-top-color: #333333;
+  border-bottom-color: #333333;
   margin-top: 6px;
 }
 .nav .dropdown-toggle:hover .caret {
-  border-top-color: #006d00;
-  border-bottom-color: #006d00;
+  border-top-color: #0d0d0d;
+  border-bottom-color: #0d0d0d;
 }
 /* move down carets for tabs */
 .nav-tabs .dropdown-toggle .caret {
@@ -3336,8 +3339,8 @@ input[type="submit"].btn.btn-mini {
   min-height: 40px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #fafafa;
-  border: 1px solid #d4d4d4;
+  background-color: #dddddd;
+  border: 1px solid #8b8b8b;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -3366,8 +3369,7 @@ input[type="submit"].btn.btn-mini {
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
-  color: #777777;
-  text-shadow: 0 1px 0 #ffffff;
+  color: #000000;
 }
 .navbar .brand:hover {
   text-decoration: none;
@@ -3375,18 +3377,18 @@ input[type="submit"].btn.btn-mini {
 .navbar-text {
   margin-bottom: 0;
   line-height: 40px;
-  color: #777777;
+  color: #000000;
 }
 .navbar-link {
-  color: #777777;
+  color: #000000;
 }
 .navbar-link:hover {
-  color: #333333;
+  color: #ffffff;
 }
 .navbar .divider-vertical {
   height: 40px;
   margin: 0 9px;
-  border-left: 1px solid #f2f2f2;
+  border-left: 1px solid #aaaaaa;
   border-right: 1px solid #ffffff;
 }
 .navbar .btn,
@@ -3514,25 +3516,24 @@ input[type="submit"].btn.btn-mini {
 .navbar .nav > li > a {
   float: none;
   padding: 10px 15px 10px;
-  color: #777777;
+  color: #000000;
   text-decoration: none;
-  text-shadow: 0 1px 0 #ffffff;
 }
 .navbar .nav .dropdown-toggle .caret {
   margin-top: 8px;
 }
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover {
-  background-color: transparent;
-  color: #333333;
+  background-color: #000000;
+  color: #ffffff;
   text-decoration: none;
 }
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus {
-  color: #555555;
+  color: #ffffff;
   text-decoration: none;
-  background-color: #e5e5e5;
+  background-color: #8b8b8b;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -3545,10 +3546,10 @@ input[type="submit"].btn.btn-mini {
   margin-right: 5px;
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #ededed;
-  border-color: #e5e5e5 #e5e5e5 #bfbfbf;
+  background-color: #d0d0d0;
+  border-color: #9d9d9d #9d9d9d #777777;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #e5e5e5;
+  *background-color: #9d9d9d;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -3562,12 +3563,12 @@ input[type="submit"].btn.btn-mini {
 .navbar .btn-navbar.disabled,
 .navbar .btn-navbar[disabled] {
   color: #ffffff;
-  background-color: #e5e5e5;
-  *background-color: #d9d9d9;
+  background-color: #9d9d9d;
+  *background-color: #909090;
 }
 .navbar .btn-navbar:active,
 .navbar .btn-navbar.active {
-  background-color: #cccccc \9;
+  background-color: #848484 \9;
 }
 .navbar .btn-navbar .icon-bar {
   display: block;
@@ -3616,24 +3617,24 @@ input[type="submit"].btn.btn-mini {
   top: auto;
 }
 .navbar .nav li.dropdown > a:hover .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #e5e5e5;
-  color: #555555;
+  background-color: #8b8b8b;
+  color: #ffffff;
 }
 .navbar .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #777777;
-  border-bottom-color: #777777;
+  border-top-color: #000000;
+  border-bottom-color: #000000;
 }
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.active > .dropdown-toggle .caret,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
-  border-top-color: #555555;
-  border-bottom-color: #555555;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 .navbar .pull-right > li > .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right {
@@ -3658,23 +3659,22 @@ input[type="submit"].btn.btn-mini {
   margin-right: -1px;
 }
 .navbar-inverse .navbar-inner {
-  background-color: #1b1b1b;
-  border-color: #252525;
+  background: #000000;
+  border-color: none;
 }
 .navbar-inverse .brand,
 .navbar-inverse .nav > li > a {
-  color: #999999;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #ffffff;
 }
 .navbar-inverse .brand:hover,
 .navbar-inverse .nav > li > a:hover {
   color: #ffffff;
 }
 .navbar-inverse .brand {
-  color: #999999;
+  color: #ffffff;
 }
 .navbar-inverse .navbar-text {
-  color: #999999;
+  color: #ffffff;
 }
 .navbar-inverse .nav > li > a:focus,
 .navbar-inverse .nav > li > a:hover {
@@ -3685,22 +3685,22 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .nav .active > a:hover,
 .navbar-inverse .nav .active > a:focus {
   color: #ffffff;
-  background-color: #111111;
+  background-color: #000000;
 }
 .navbar-inverse .navbar-link {
-  color: #999999;
+  color: #ffffff;
 }
 .navbar-inverse .navbar-link:hover {
   color: #ffffff;
 }
 .navbar-inverse .divider-vertical {
-  border-left-color: #111111;
-  border-right-color: #222222;
+  border-left-color: #000000;
+  border-right-color: #000000;
 }
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle,
 .navbar-inverse .nav li.dropdown.open.active > .dropdown-toggle {
-  background-color: #111111;
+  background-color: #000000;
   color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown > a:hover .caret {
@@ -3708,8 +3708,8 @@ input[type="submit"].btn.btn-mini {
   border-bottom-color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown > .dropdown-toggle .caret {
-  border-top-color: #999999;
-  border-bottom-color: #999999;
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
 }
 .navbar-inverse .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar-inverse .nav li.dropdown.active > .dropdown-toggle .caret,
@@ -3719,8 +3719,8 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inverse .navbar-search .search-query {
   color: #ffffff;
-  background-color: #515151;
-  border-color: #111111;
+  background-color: #404040;
+  border-color: #000000;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -3749,10 +3749,10 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #0e0e0e;
-  border-color: #040404 #040404 #000000;
+  background-color: #000000;
+  border-color: #000000 #000000 #000000;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  *background-color: #040404;
+  *background-color: #000000;
   /* Darken IE7 buttons by default so they stand out more given they won't have borders */
 
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
@@ -3763,7 +3763,7 @@ input[type="submit"].btn.btn-mini {
 .navbar-inverse .btn-navbar.disabled,
 .navbar-inverse .btn-navbar[disabled] {
   color: #ffffff;
-  background-color: #040404;
+  background-color: #000000;
   *background-color: #000000;
 }
 .navbar-inverse .btn-navbar:active,
@@ -3816,7 +3816,7 @@ input[type="submit"].btn.btn-mini {
   line-height: 20px;
   text-decoration: none;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #000000;
   border-left-width: 0;
 }
 .pagination ul > li > a:hover,
@@ -4275,7 +4275,7 @@ input[type="submit"].btn.btn-mini {
   box-shadow: none;
 }
 a.thumbnail:hover {
-  border-color: #00b900;
+  border-color: #333333;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -4330,7 +4330,8 @@ a.thumbnail:hover {
   vertical-align: baseline;
   white-space: nowrap;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #999999;
+  background-color: #000000;
+  border: 1px solid #ffffff;
 }
 .badge {
   padding-left: 9px;

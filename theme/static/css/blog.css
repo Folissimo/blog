@@ -1,0 +1,144 @@
+ .sansFont {
+ 	font-family: 'CantarellRegular', Helvetica, Arial, sans-serif;
+ 	text-transform: uppercase;
+}
+html {
+	background: #000;
+}
+body {
+	background: #fff url(../img/starBackground.png) repeat;
+	
+}
+
+  .sidebar-nav {
+    padding: 9px 0;
+  }
+  .tag-1 {
+    font-size: 13pt;
+  }
+  .tag-2 {
+    font-size: 10pt;
+  }
+  .tag-2 {
+    font-size: 10pt;
+  }
+  .tag-4 {
+    font-size: 10pt;
+ }
+.logo {
+	background: #fff url(../img/folissimoLogo_onWhite.png) top left no-repeat;
+	width: 180px;
+	height: 25px;
+	display: inline-block;
+	background-size: auto 100%;
+}
+
+.siteTitle {
+	font-style: italic;
+	text-transform: none;
+	font-family: Georgia, serif;
+	font-size: 33pt !important;
+	padding-top: 24px !important;
+	display: block;
+	background: black;
+}
+.article, article {
+	margin: 0px 15px 15px;
+	padding: 0px 20px 20px;
+	background: #fff;
+}
+.sidebar-nav {
+	border: 1px solid #C7C7C7;
+	margin-bottom: 80px;
+}
+.navbar-static-top {
+	background:  url(../img/adminBackground.gif) repeat top left;
+	padding-bottom: 60px;
+	margin-bottom: 50px;
+}
+.navbar-inverse .navbar-inner {
+	background: none;
+	border-bottom: none;
+}
+.article h1, article h1 {
+	margin-top: 0px;
+	font-size: 16px;
+	background: #000;
+}
+.article h1 a, article h1 a{
+	color: #fff;
+	padding: 20px;
+}
+article h1 a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.nav-header-black {
+	background: #000;
+	color: #fff;
+}
+.nav-header-black h1 {
+	
+}
+.footer {
+  background: #121212;
+  color: white;
+  overflow: auto;
+  font-family: "CantarellRegular", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-style: normal; }
+  .footer .footerLines {
+    height: 8px;
+    border-top: 1px solid #444444;
+    border-bottom: 1px solid #444444;
+    margin-top: 12px; }
+  .footer a {
+    color: #aaaaaa;
+    font-size: 14px; }
+  .footer ul, .footer li {
+    list-style: none;
+    padding: 8px 2px;
+    float: left; }
+  .footer li {
+    margin: 0;
+    padding: 8px 2px 8px 40px;
+    clear: left; }
+  .footer .facebook {
+    background: url(../img/fbIcon_01.png) no-repeat center left; }
+  .footer .twitter {
+    background: url(../img/twitterIcon_01.png) no-repeat center left; }
+  .footer .pintrest {
+    background: url(../img/pintrestIcon.png) no-repeat center left; }
+  .footer .email {
+    background: url(../img/contact.png) no-repeat center left; }
+  .footer ul {
+    margin-left: 50px;
+    clear: none; }
+  .footer .latestTweets {
+    color: #aaaaaa;
+    float: right;
+    width: 300px;
+    margin: 15px 10px 20px 0px; }
+    .footer .latestTweets #twitter_update_list {
+      margin: 0;
+      font-size: 14px;
+      font-family: Georgia, "TeXGyreScholaItalic", serif;
+      font-style: italic;
+      font-weight: normal;
+      text-transform: none; }
+      .footer .latestTweets #twitter_update_list li {
+        margin: 10px 0px !important;
+        padding: 0px; }
+@media screen and (max-width:979px){
+	.footer .latestTweets {
+		float: left;
+		text-align: center;
+	}
+	.footer .latestTweets #twitter_update_list {
+		margin: 20px;
+	}
+	
+}
