@@ -6,11 +6,14 @@
         <div class="article">
                 
                 {% if loop.index < 2 %}
-                	<h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
                 	{% if article.image %}
 	                	<div class="articleImage">
 	                		<img src="{{ SITEURL }}/static/images/{{ article.image }}" />
+	                		<a class="articleTitle sansFont" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
 	                	</div>
+	                {% else %}
+		                <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+
 	                {% endif %}
 	                <div class="introInfo">
 	                        {% include 'article_infos.html' %}
@@ -18,9 +21,11 @@
                 	<div class="articleContent">{{ article.content }}</div>
                 	<div class="articleFooter well">
 						<span class="label">Category</span>
-						<a href="{{ SITEURL }}/{{ article.category.url }}"><i class="icon-folder-open"></i>{{ article.category }}</a>.
+						<a href="{{ SITEURL }}/{{ article.category.url }}">
+							<i class="icon-folder-open"></i>{{ article.category }}</a>.
 						{% include 'taglist.html' %}
 						{% include 'translations.html' %}
+						<div class="fb-like" data-href="http://blog.folissimo.com/{{ article.url }}" data-send="false" data-layout="button_count" data-width="200" data-show-faces="true" data-font="tahoma"></div>
                 	</div>
                 {% else %}
                		<h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>

@@ -9,11 +9,14 @@ body {
 	background: #fff url(../img/starBackground.png) repeat;
 	
 }
+.articleFooter.well > * {
+margin: 3px;
+}
 .summary {
 	font-style: italic;
 }
 .introInfo {
-	padding: 15px 3px;
+	padding: 30px 3px;
 }
   .sidebar-nav {
     padding: 9px 0;
@@ -43,8 +46,9 @@ body {
 	text-transform: none;
 	font-family: Georgia, serif;
 	font-size: 33pt !important;
-	padding-top: 24px !important;
+	padding: 40px 35px!important;
 	display: block;
+	line-height: 40px;
 	background: black;
 }
 .article, article {
@@ -57,9 +61,36 @@ body {
 	margin-bottom: 80px;
 }
 .navbar-static-top {
-	background:  url(../img/adminBackground.gif) repeat top left;
-	padding-bottom: 60px;
+	background:  url(../img/adBG.gif) repeat top left;
+	padding-bottom: 25px;
 	margin-bottom: 50px;
+}
+.label {
+	  margin: 0px 10px;
+}
+.articleImage {
+	position: relative;
+}
+.articleTitle {
+	background: #000;
+	background: rgba(0,0,0,0.85);
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+}
+.articleContent {
+	margin: 20px 0px;
+}
+a.articleTitle:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.label.first {
+	margin-left: 0px;
 }
 .navbar-inverse .navbar-inner {
 	background: none;

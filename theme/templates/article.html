@@ -3,22 +3,27 @@
 {% block content %}
 <section id="content">
         <article>
-                <header>
-                        <h1>
-                                <a href="{{ pagename }}"
-                                        rel="bookmark"
-                                        title="Permalink to {{ article.title }}">
-                                        {{ article.title}}
-                                </a>
-                                {% include 'twitter.html' %}
-                        </h1>
-                </header>
-                <div class="entry-content">
+                
+                
                 	{% if article.image %}
-                	<div class="articleImage">
-                		<img src="{{ SITEURL }}/static/images/{{ article.image }}" />
-                	</div>
-                {% endif %}
+                	<div class="entry-content">
+	                	<div class="articleImage">
+	                		<img src="{{ SITEURL }}/static/images/{{ article.image }}" />
+	                		<a class="articleTitle sansFont" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+	                	</div>
+	                {% else %}
+		                <header>
+		                        <h1>
+		                                <a href="{{ pagename }}"
+		                                        rel="bookmark"
+		                                        title="Permalink to {{ article.title }}">
+		                                        {{ article.title}}
+		                                </a>
+		                                {% include 'twitter.html' %}
+		                        </h1>
+		                </header>
+						<div class="entry-content">
+	                {% endif %}
                 <div class="introInfo">
                         {% include 'article_infos.html' %}
                 </div>
@@ -30,6 +35,7 @@
 					<a href="{{ SITEURL }}/{{ article.category.url }}"><i class="icon-folder-open"></i>{{ article.category }}</a>.
 					{% include 'taglist.html' %}
 					{% include 'translations.html' %}	
+					<div class="fb-like" data-href="http://blog.folissimo.com/{{ article.url }}" data-send="false" data-layout="button_count" data-width="200" data-show-faces="true" data-font="tahoma"></div>
                 </div>
                 
                 {% if DISQUS_SITENAME %}

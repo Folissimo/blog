@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Campbell Morgan'
-SITENAME = 'Tips and News'
+SITENAME = 'Folissimo Blog'
 SITEURL = 'http://blog.folissimo.com'
 DISQUS_SITENAME = 'folissimo'
 TIMEZONE = 'Europe/London'
