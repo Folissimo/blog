@@ -46,10 +46,19 @@ margin: 3px;
 	text-transform: none;
 	font-family: Georgia, serif;
 	font-size: 33pt !important;
-	padding: 40px 35px!important;
+	padding: 0px 0px 34px!important;
 	display: block;
-	line-height: 40px;
-	background: black;
+	margin: 35px;
+	border-bottom: 1px solid #C5C5C5;
+	color: #000;
+	line-height: 35px !important;
+}
+.centred {
+	max-width: 1400px
+	margin: auto !important;
+}
+.siteTitle:hover {
+	text-decoration: none;
 }
 .article, article {
 	margin: 0px 15px 15px;
