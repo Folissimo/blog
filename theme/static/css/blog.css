@@ -7,7 +7,7 @@ html {
 }
 body {
 	background: #fff url(../img/starBackground.png) repeat;
-	
+
 }
 .articleFooter.well > * {
 margin: 3px;
@@ -81,8 +81,6 @@ margin: 3px;
 	position: relative;
 }
 .articleTitle {
-	background: #000;
-	background: rgba(0,0,0,0.85);
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
@@ -90,13 +88,23 @@ margin: 3px;
 	padding: 10px;
 	color: #fff;
 	font-size: 30px;
-	padding: 12% 20px 4%;
+	padding: 5% 20px 4%;
+    line-height: 35px;
+    background: #000;
+    background: rgba(0,0,0,0.3);
+    text-shadow: 0px 0px 5px #000;
+    -webkit-text-shadow: 0px 0px 5px #000;
+    -webkit-transition: background 1s;
+    -moz-transition: background 1s;
+    -o-transition: background 1s;
 }
 .articleContent {
 	margin: 20px 0px;
 }
 a.articleTitle:hover {
-	color: #fff;
+	background: #000;
+	background: rgba(0,0,0,0.9);
+    color: #fff;
 	text-decoration: underline;
 }
 .label.first {
@@ -125,7 +133,7 @@ article h1 a:hover {
 	color: #fff;
 }
 .nav-header-black h1 {
-	
+
 }
 .footer {
   background: #121212;
@@ -186,5 +194,5 @@ article h1 a:hover {
 	.footer .latestTweets #twitter_update_list {
 		margin: 20px;
 	}
-	
+
 }

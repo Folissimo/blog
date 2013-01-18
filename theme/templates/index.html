@@ -4,8 +4,7 @@
 {% if articles %}
         {% for article in (articles_page.object_list if articles_page else articles) %}
         <div class="article">
-                
-                {% if loop.index < 2 %}
+                {% if loop.index < 4 %}
                 	{% if article.image %}
 	                	<div class="articleImage">
 	                		<img src="{{ SITEURL }}/static/images/{{ article.image }}" />
@@ -17,7 +16,7 @@
 	                {% endif %}
 	                <div class="introInfo">
 	                        {% include 'article_infos.html' %}
-	                </div>	
+	                </div>
                 	<div class="articleContent">{{ article.content }}</div>
                 	<div class="articleFooter well">
 						<span class="label">Category</span>
@@ -31,7 +30,7 @@
                		<h3><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h3>
                		<div class="well">
 	                        {% include 'article_infos.html' %}
-	                </div> 
+	                </div>
 	                <div class="summary">{{ article.summary }}
 	                        <a class="btn primary xsmall" href="{{ SITEURL }}/{{ article.url }}">more ...</a>
 	                </div>
