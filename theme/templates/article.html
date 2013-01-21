@@ -7,9 +7,10 @@
                 
                 	{% if article.image %}
                 	<div class="entry-content">
+                		<a class="articleTitle sansFont" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
 	                	<div class="articleImage">
 	                		<img src="{{ SITEURL }}/static/images/{{ article.image }}" />
-	                		<a class="articleTitle sansFont" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+	                		
 	                	</div>
 	                {% else %}
 		                <header>

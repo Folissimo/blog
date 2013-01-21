@@ -11,6 +11,6 @@ DEFAULT_LANG = 'en'
 
 
 THEME = './theme'
-
+FILES_TO_COPY = (('extra/.htaccess', '.htaccess'),)
 
 DEFAULT_PAGINATION = False
