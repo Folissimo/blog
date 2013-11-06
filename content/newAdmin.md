@@ -8,7 +8,7 @@ Author: Campbell Morgan
 Summary: It's not just the look that's changed, we've also made a number of improvements to productivity
 
 To coincide with the launch of [our new frontpage](http://www.folissimo.com), we've changed the look
-of the administration system. We're hoping that it's made it easier to find your way about. 
+of the administration system. We're hoping that it's made it easier to find your way about.
 *If it hasn't let us know (support@folissimo.com).*
 
 More importantly, we've added a number of new features that give you more control over
@@ -19,7 +19,7 @@ your content and reduce the amount of time you have to spend updating your site:
 ###Font Customisation
 
 
-![Customising Fonts](/static/images/fontCustomisation.jpg "Customising Fonts")
+![Customising Fonts](/images/fontCustomisation.jpg "Customising Fonts")
 
 Although we try hard to make sure that our curated font selections fit the bill,
 you may find that you want something a bit different: maybe you want a larger menu font,
@@ -37,9 +37,9 @@ and "tertiary" is the body text such as "text item" content and image descriptio
 ###Custom Backgrounds
 
 
-![Customising Backgrounds](/static/images/backgroundCustomisation.jpg "Customising Backgrounds")
+![Customising Backgrounds](/images/backgroundCustomisation.jpg "Customising Backgrounds")
 
-On selected themes, it's now possible to upload your own background. This could be a repeating 
+On selected themes, it's now possible to upload your own background. This could be a repeating
 texture like a wood pattern, or it could be a large image.
 
 To upload your own image, under the "colour" section in the Theme Editor, select "custom background" from
@@ -53,9 +53,9 @@ your background or "centered" for it to be stretched across the screen.
 ###Workflow Improvements
 
 
-![Multiple Selecting](/static/images/workflow.jpg)
+![Multiple Selecting](/images/workflow.jpg)
 
-We heard how you have found it difficult to edit a lot of images simultaneously. 
+We heard how you have found it difficult to edit a lot of images simultaneously.
 As a result we’ve added more ways to edit your images:
 +	right click on any item to open it in its respective editor
 +	hold down shift and click on the content title to multiple select /deselect items

@@ -62,9 +62,9 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          
+
           <div class="nav-collapse">
-            <ul class="nav pull-right">
+            <ul class="nav nav-none">
               {% for title, link in MENUITEMS %}
                   <li><a href="{{ link }}">{{ title }}</a></li>
               {% endfor %}
@@ -72,7 +72,7 @@
               {% for page in PAGES %}
                 <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
               {% endfor %}
-                        
+
               {% endif %}
               {% for cat, null in categories %}
                   <li {% if cat == category %}class="active"{% endif %}>
@@ -82,8 +82,8 @@
                   </li>
               {% endfor %}
 
+                <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
                           <ul class="nav pull-right">
-                                <li><a href="{{ SITEURL }}/archives.html">Archives</a></li>
                                 <li><a href="http://www.folissimo.com/about">About Folissimo</a></li>
                                 <li><a href="http://www.folissimo.com/#signup">Try Folissimo</a></li>
                                 <li><a href="http://www.folissimo.com/support">Support</a></li>
@@ -98,7 +98,7 @@
     </div>
 
     <div class="container-fluid centred">
- 
+
       <div class="row">
         <div class="span8 offset2" id="content">
             {% block content %}
@@ -114,7 +114,7 @@
    </div><!--/.fluid-container-->
 
       <footer>
-        
+
         <div class="footer">
 			<div class="footerLines"></div>
 			<ul class="bottomMenu">
@@ -129,14 +129,13 @@
 				<li class="pintrest"><a href="http://www.pinterest.com/folissimo" target="_blank">Pinterest</a></li>
 				<li class="email"><a href="mailto:getintouch@folissimo.com">getintouch@folissimo.com</a></li>
 			</ul>
-			<div class="latestTweets">Latest Tweets
-				<ul id="twitter_update_list"><li>Twitter feed loading</li></ul>
+			<div class="latestTweets">
 			</div>
-		
+
 		</div>
       </footer>
 
-    
+
 
 
     {% include 'analytics.html' %}
@@ -145,9 +144,10 @@
 
     <!-- Le javascript -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{{ SITEURL }}/theme/js/underscore-min.js"></script>
+    <script src="{{ SITEURL }}/theme/js/moment.min.js"></script>
     <script src="{{ SITEURL }}/theme/js/jquery-1.7.2.min.js"></script>
     <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
-<script type="text/javascript" src="https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=folissimo&count=3&exclude_replies=true&callback=twitterCallback2"></script>
+    <script src="{{ SITEURL }}/theme/js/twitter.js"></script>
   </body>
 </html>

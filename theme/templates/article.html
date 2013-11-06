@@ -3,14 +3,14 @@
 {% block content %}
 <section id="content">
         <article>
-                
-                
+
+
                 	{% if article.image %}
                 	<div class="entry-content">
                 		<a class="articleTitle sansFont" href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
 	                	<div class="articleImage">
-	                		<img src="{{ SITEURL }}/static/images/{{ article.image }}" />
-	                		
+	                		<img src="{{ SITEURL }}/images/{{ article.image }}" />
+
 	                	</div>
 	                {% else %}
 		                <header>
@@ -29,16 +29,16 @@
                         {% include 'article_infos.html' %}
                 </div>
                 {{ article.content }}
-                
+
                 </div><!-- /.entry-content -->
                 <div class="articleFooter well">
 	                <span class="label">Category</span>
 					<a href="{{ SITEURL }}/{{ article.category.url }}"><i class="icon-folder-open"></i>{{ article.category }}</a>.
 					{% include 'taglist.html' %}
-					{% include 'translations.html' %}	
+					{% include 'translations.html' %}
 					<div class="fb-like" data-href="http://blog.folissimo.com/{{ article.url }}" data-send="false" data-layout="button_count" data-width="200" data-show-faces="true" data-font="tahoma"></div>
                 </div>
-                
+
                 {% if DISQUS_SITENAME %}
                 <div class="comments">
                 <h2>Comments !</h2>

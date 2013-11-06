@@ -2,15 +2,18 @@
 # -*- coding: utf-8 -*- #
 
 AUTHOR = 'Campbell Morgan'
-SITENAME = 'Folissimo Blog'
-SITEURL = 'http://blog.folissimo.com'
+SITENAME = 'The Folissimo Blog'
+SITEURL = '/blogFolissimo/output/'
 DISQUS_SITENAME = 'folissimo'
 TIMEZONE = 'Europe/London'
 STATIC_PATHS = ['images']
+DEFAULT_PAGINATION = 3
 DEFAULT_LANG = 'en'
+MARKUP = ('md')
 
 
 THEME = './theme'
-FILES_TO_COPY = (('extra/.htaccess', '.htaccess'),)
+EXTRA_PATH_METADATA = {
+    'extra/.htaccess': {'.htaccess' : 'extra/.htaccess'},
+}
 
-DEFAULT_PAGINATION = False
